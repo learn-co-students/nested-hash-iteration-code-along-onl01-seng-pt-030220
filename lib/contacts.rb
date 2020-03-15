@@ -15,5 +15,10 @@ require 'pry'
   # }
   
 def remove_strawberry(contacts)
-
+ice_cream = contacts["Freddy Mercury"][:favorite_ice_cream_flavors]
+new_ice_cream = ice_cream.select do |el|
+  el != "strawberry"
+end
+contacts["Freddy Mercury"][:favorite_ice_cream_flavors] = new_ice_cream
+return contacts
 end
