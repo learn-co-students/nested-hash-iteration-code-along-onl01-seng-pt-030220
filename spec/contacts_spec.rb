@@ -23,3 +23,5 @@ describe "#remove_strawberry" do
     expect(result["Freddy Mercury"][:favorite_ice_cream_flavors]).to_not include("strawberry")
   end
 end
+
+
